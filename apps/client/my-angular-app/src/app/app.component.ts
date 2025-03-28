@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { NxWelcomeComponent } from './nx-welcome.component';
+import { unicornrocket } from '@umar-monorepo/shared/utils';
 
 @Component({
   imports: [NxWelcomeComponent, RouterModule],
@@ -9,5 +10,5 @@ import { NxWelcomeComponent } from './nx-welcome.component';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'my-angular-app';
+  title = `Hello my name is ${unicornrocket}`;
 }

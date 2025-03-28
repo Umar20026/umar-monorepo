@@ -3,11 +3,12 @@
 import NxWelcome from './nx-welcome';
 
 import { Route, Routes, Link } from 'react-router-dom';
+import { unicornrocket } from '@umar-monorepo/shared/utils'
 
 export function App() {
   return (
     <div>
-      <NxWelcome title="my-react-app" />
+      <NxWelcome title={`hello my name is ${unicornrocket} `}  />
 
       {/* START: routes */}
       {/* These routes and navigation have been generated for you */}
